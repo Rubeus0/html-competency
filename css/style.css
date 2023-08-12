@@ -1,0 +1,28 @@
+html {
+    background: #6D326D;
+    color: #333
+}
+
+a {
+    color: aliceblue;
+    
+}
+
+a:visited {
+    color: lightgrey;
+
+}
+
+a:hover {
+    color: #eee;
+
+}
+
+header {
+    background: #5DA9E9;
+}
+
+main {
+    background: #003F91;
+    color: whitesmoke
+}
