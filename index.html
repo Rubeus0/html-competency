@@ -16,11 +16,10 @@
     </head>
 
     <body>
+        <header>
         <h1>On the Horizon</h1>
 
-        <hr>
-
-        <nav>
+        <nav aria-label="primary-navigation">
             <ul>
                 <li>
                     <a href="#developer">Becoming a Developer/SE</a>
@@ -30,25 +29,32 @@
                 </li>
             </ul>
         </nav>
+        </header>
 
         <hr>
-        <section id="developer">
+
+        <main>
+        <article id="developer">
             <h2>"Can you see that big green tree?"</h2>
 
             <p>I <strong><em>WILL</em></strong> become a fullstack web developer/software engineer!</p>
 
-            <img src="img/code.png" width="400px" height="auto" alt="A laptop with a wall of code displayed on the screen" title="I am DEDICATED" loading="lazy">
+            <section>
+                <h3>This is My Road to Mastery</h3>
+                <img src="img/code.png" width="400px" height="auto" alt="A laptop with a wall of code displayed on the screen" title="I am DEDICATED" loading="lazy">
 
-            <figure>
-                <p>Example of Code</p>
-                <code>
+                <figure>
+                    <p>Example of Code</p>
+                    <code>
                     &lt;section&gt; 
                     <br>&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</br>
                     &nbsp;&nbsp;&lt;p&gt;This is an example of code with section, heading, and paragraph elements&lt;/p&gt;
                     <br>&lt;/section&gt;</br>
-                </code>
-            </figure>
+                    </code>
+                </figure>
+            </section>
 
+            <section>
                 <h3>Daily Schedule</h3>
 
                 <p>I plan to accomplish this by:</p>
@@ -66,17 +72,26 @@
                         ...compiling <a href="https://developer.mozilla.org/en-US/">developer resources</a>
                     </li>
                 </ol>
-        </section>
+                <aside>
+                    <details>
+                        <summary><mark>How many hours</mark> do I spend coding?</summary>
+                        <p> On weekdays I start after work (around <time datetime="17:00">5pm</time>) and code for <time datetime="PT4H">4 hours</time>.</p>
+                        <p>On weekends, I dedicate as much time as possible. No less than 8<abbr title="hours">hrs</abbr></p>
+                    </details>
+                </aside>
+            </section>
+        </article>
 
         <hr>
 
-        <section id="abode">
+        <article id="abode">
             <h2>Once I achieve this I will look for a new place to live</h2>
 
             <p>There are so <em>many</em> places that come to mind.</p>
             <p>Do I want to stay in my current state, or move to another? maybe <abbr title="Nevada">NV</abbr></p>
 
-                <h3>Places i'd like to live</h3>
+            <section>
+                 <h3>Places i'd like to live</h3>
                     <ul>
                         <li>
                             Somewhere between nature and city
@@ -102,7 +117,9 @@
                             </figure>
                         </li>
                     </ul>
-         
+            </section>
+
+            <section>
                 <h3>Places i'd like to avoid</h3>
                     <dl>
                         <dt>anywhere close to a major fault line!</dt>
@@ -110,12 +127,17 @@
                         <dt>anywhere too hot</dt>
                             <dd>I'll pass on Furnace Creek in Death Valley</dd>
                     </dl>
-        </section>
+            </section>
+        </article>
+        </main>
 
         <hr>
-        &lt;&lt;&lt; &copy; <a href="about.html">Ruben Ruiz</a> &gt;&gt;&gt;
-        <p>
+
+        <footer>
+            <p>&lt;&lt;&lt; &copy; <a href="about.html">Ruben Ruiz</a> &gt;&gt;&gt;</p>
+            <p>
             <a href="#">Back to Top</a>
-        </p>
+            </p>
+        </footer>
     </body>
 </html>
