@@ -23,6 +23,9 @@
                 <li>
                     <a href="#abode">Moving</a>
                 </li>
+                <li>
+                    <a href="contact">Contact me</a>
+                </li>
             </ul>
         </nav>
         </header>
@@ -143,15 +146,11 @@
                 </table>
             </section>
         </article>
-
         <hr>
-
         <article id="abode">
             <h2>Once I achieve this I will look for a new place to live</h2>
-
             <p>There are so <em>many</em> places that come to mind.</p>
             <p>Do I want to stay in my current state, or move to another? maybe <abbr title="Nevada">NV</abbr></p>
-
             <section>
                  <h3>Places i'd like to live</h3>
                     <ul>
@@ -159,7 +158,6 @@
                             Somewhere between nature and city
                         </li>
                     </ul>
-
                 <figure>
                     <img src="img/chattanooga.png" alt="A bridge over water leading into a town" title="Chattanooga TN" width="400" height="300" loading="lazy">
                     <figcaption>
@@ -181,7 +179,6 @@
                     </figcaption>
                 </figure>
             </section>
-
             <section>
                 <h3>Places i'd like to avoid</h3>
                     <dl>
@@ -192,10 +189,45 @@
                     </dl>
             </section>
         </article>
-        </main>
-
         <hr>
-
+        <article id="contact">
+            <h2>Contact me</h2>
+            <p>I'd like to hear from you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Jane" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Shhh" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
+                </p>
+                <p>
+                    <label for="coffee">Favorite Coffe:</label>
+                    <select name="coffee" id="coffee">
+                        <option value="de-caf">De-caf</option>
+                        <option value="black">Black</option>
+                        <option value="vanilla-late">Vanilla Late</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </form>
+        </article>
+        </main>
+        <hr>
         <footer>
             <p>&lt;&lt;&lt; &copy; <a href="about.html">Ruben Ruiz</a> &gt;&gt;&gt;</p>
             <p>
