@@ -1,28 +1,116 @@
-html {
-    background: #6D326D;
-    color: #333
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: aliceblue;
-    
-}
-
-a:visited {
-    color: lightgrey;
-
-}
-
-a:hover {
-    color: #eee;
-
+body {
+    background: #003049;
+    margin: 0.5rem;
+    font-family: "Roboto", san-serif;
+    text-align: center;
 }
 
 header {
-    background: #5DA9E9;
+    border-radius: 6em;
+    background: #fdf0d5cc;
+    width: 300px;
+    padding: 1.5rem;
+    margin: 0 auto 1em;
 }
 
-main {
-    background: #003F91;
-    color: whitesmoke
+ul {
+    list-style-type: none;
+}
+
+.firstArticle {
+    border-radius: 2em;
+    background: #669bbc;
+    margin: 0 auto 4rem;
+    max-width: 600px;
+    padding: 1.5rem 0 0;
+}
+
+.firstArticle h2 {
+    margin: 0 0 .5em;
+}
+
+
+/* First Section */
+
+.masteryRoad {
+    border-top: solid;
+    background: #4fa4d8;
+    margin: 0 auto;
+}
+
+ h3 {
+    margin: 1em 0;
+}
+
+/* First Section End*/
+
+/* Second Section */
+
+.dailySched {
+    border-top: solid;
+    border-radius: 0 0 2em 2em;
+    background: #4fa4d8;
+    margin: 0 auto;
+    padding: 0 0 2rem;
+}
+
+ol { 
+    list-style-position: inside;
+    text-align: left;
+    padding: 1rem 0 .5rem 8rem;
+}
+
+
+
+.table {
+    border-radius: 0 0 2rem 2rem;
+    margin: 0 auto;
+    padding: 0 0 1.5rem;
+}
+
+.tfoot {
+    border: none;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+caption {
+    border-radius: 2rem 2rem 0 0;
+}
+
+/* Second Section End*/
+
+.secondArticle {
+    border-radius: 2em;
+    background: #669bbc;
+    margin: 0 auto 4rem;
+    max-width: 600px;
+    padding: 1.5rem 0 0;
+}
+
+.htwo {
+    padding: 0 0 1rem;
+}
+
+.livingPlaces {
+    border-top: solid;
+    border-bottom: solid;
+    background: #4fa4d8;
+    margin: 0 auto;
+}
+
+.figone {
+    padding: 0 0 2rem;
+    border-bottom: dashed blue;
 }
