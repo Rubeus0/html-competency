@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <header>
+        <header class="headerOne">
         <h1>On the Horizon</h1>
 
         <nav aria-label="primary-navigation">
@@ -24,7 +24,7 @@
                     <a href="#abode">Moving</a>
                 </li>
                 <li>
-                    <a href="contact">Contact me</a>
+                    <a href="#contact">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -34,14 +34,14 @@
         <article class="firstArticle" id="developer">
             <h2>"Can you see that big green tree?"</h2>
 
-            <p>I <strong><em>WILL</em></strong> become a fullstack web developer/software engineer!</p>
+            <p class="headingOne">I <strong><em>WILL</em></strong> become a fullstack web developer/software engineer!</p>
 
             <section class="masteryRoad">
                 <h3>This is My Road to Mastery</h3>
                 <img src="img/code.png" width="400" height="300" alt="A laptop with a wall of code displayed on the screen" title="I am DEDICATED" loading="lazy">
 
-                <figure>
-                    <p>Example of Code</p>
+                <figure class="figOne">
+                    <h4>Example of Code</h4>
                     <code>
                     &lt;section&gt; 
                     <br>&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;
@@ -83,55 +83,55 @@
                     <caption>Work Week Schedule</caption>
                     <tbody>
                     <tr>
-                    <th scope="row">Morning</th>
-                        <td>
+                    <th class="colOne" scope="row">Morning</th>
+                        <td class="colTwo">
                             <time datetime="07:00">7am</time>-<time datetime="12:00">12pm</time>
                         </td>
-                        <td>Work</td>
+                        <td class="colThr">Work</td>
                     </tr>
 
                     <tr>
-                    <th scope="row">Break</th>
-                        <td>
+                    <th class="colOne" scope="row">Break</th>
+                        <td class="colTwo">
                         <time datetime="12:00">12pm</time>-<time datetime="13:00">1pm</time>
                         </td> 
-                        <td>Lunch</td>
+                        <td class="colThr">Lunch</td>
                     </tr>
 
                     <tr>
-                    <th scope="row">Afternoon</th>
-                        <td>
+                    <th class="colOne" scope="row">Afternoon</th>
+                        <td class="colTwo">
                             <time datetime="13:00">1pm</time>-<time datetime="16:00">4pm</time>
                         </td>
-                        <td>Work</td>
+                        <td class="colThr">Work</td>
                     </tr>
 
                     <tr>
-                    <th scope="row">Evening</th>
-                        <td>
+                    <th class="colOne" scope="row">Evening</th>
+                        <td class="colTwo">
                             <time datetime="16:00">4pm</time>-<time datetime="17:00">5pm</time>
                         </td>
-                        <td>Traffic</td>
+                        <td class="colThr">Traffic</td>
                     </tr>
 
                     <tr>
-                    <th scope="row">GRIND</th>
-                        <td>
+                    <th class="colOne" scope="row">GRIND</th>
+                        <td class="colTwo">
                             <time datetime="17:00">5pm</time>-<time datetime="21:00">9pm</time>
                         </td>
-                        <td>Code!</td>
+                        <td class="colThr">Code!</td>
                     </tr>
 
-                    <tr>
+                    <tr class="rowMod">
                         <td rowspan="2">
                             All Other TImes
                         </td>
-                        <td>
+                        <td class="colTwo">
                             Free time
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="colTwo">
                             Sleep
                         </td>
                     </tr>
@@ -144,10 +144,12 @@
                 </table>
             </section>
         </article>
-        <article class="secondArticle id="abode">
+        <article class="secondArticle" id="abode">
+            <header class="headerTwo">
             <h2 class="htwo">Once I achieve this I will look for a new place to live</h2>
             <p>There are so <em>many</em> places that come to mind.</p>
             <p>Do I want to stay in my current state, or move to another? maybe <abbr title="Nevada">NV</abbr></p>
+            </header>
             <section class="livingPlaces">
                  <h3>Places i'd like to live</h3>
                     <ul>
@@ -155,13 +157,18 @@
                             Somewhere between nature and city
                         </li>
                     </ul>
-                <figure class="figone">
+                <figure class="figTwo">
                     <img src="img/chattanooga.png" alt="A bridge over water leading into a town" title="Chattanooga TN" width="400" height="300" loading="lazy">
                     <figcaption>
                         This seems like a good balance between structure and nature
                     </figcaption>
                 </figure>
-                    <ul>
+
+                <!-- ynpul = Yosemite National Park ul -->
+                <!-- ynpfig = Yosemite National Park fig -->
+
+                <figure class="ynpfig">  
+                    <ul class="ynpul">
                         <li>
                             <p>It would be cool to be close to mountains like:</p>
                             <address>
@@ -169,7 +176,7 @@
                             </address>
                         </li>
                     </ul>
-                <figure>
+    
                     <img src="img/yosemite.png" alt="Glacier Point mountain in Yosemite CA" title="Pure Beauty" width="400" height="300">
                     <figcaption>
                         Glacier Point Road
@@ -180,9 +187,9 @@
                 <h3>Places i'd like to avoid</h3>
                     <dl>
                         <dt>anywhere close to a major fault line!</dt>
-                            <dd>San Francisco is a definite no</dd>
+                            <dd class="dd">San Francisco is a definite no</dd>
                         <dt>anywhere too hot</dt>
-                            <dd>I'll pass on Furnace Creek in Death Valley</dd>
+                            <dd class="dd">I'll pass on Furnace Creek in Death Valley</dd>
                     </dl>
             </section>
         </article>
@@ -197,19 +204,19 @@
                 </p>
                 <p>
                     <label for="lastname">Last Name:</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="on" required>
+                    <input class="rightAlign" type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="on" required>
                 </p>
                 <p>
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="Shhh" autocomplete="on" required>
+                    <input class="rightAlign" type="password" name="password" id="password" placeholder="Shhh" autocomplete="on" required>
                 </p>
                 <p>
                     <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input class="rightAlign" type="tel" name="phone" id="phone" placeholder="555-555-5555" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </p>
                 <p>
                     <label for="decade">Favorite Decade:</label>
-                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
+                    <input class="rightAlign" type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
                 </p>
                 <p>
                     <label for="coffee">Favorite Coffe:</label>
